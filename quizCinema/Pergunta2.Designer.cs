@@ -40,7 +40,8 @@
             // 
             // btn02_03
             // 
-            this.btn02_03.Location = new System.Drawing.Point(332, 231);
+            this.btn02_03.ForeColor = System.Drawing.Color.Black;
+            this.btn02_03.Location = new System.Drawing.Point(82, 235);
             this.btn02_03.Name = "btn02_03";
             this.btn02_03.Size = new System.Drawing.Size(126, 23);
             this.btn02_03.TabIndex = 15;
@@ -134,6 +135,7 @@
             this.Controls.Add(this.lblPergunta2);
             this.Controls.Add(this.lblP2);
             this.Controls.Add(this.lblNomeSobrenome);
+            this.ForeColor = System.Drawing.Color.Yellow;
             this.Name = "Pergunta2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pergunta2";

@@ -83,6 +83,16 @@ namespace quizCinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cinema_stallone1 {
+            get {
+                object obj = ResourceManager.GetObject("cinema-stallone1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cinema2 {
             get {
                 object obj = ResourceManager.GetObject("cinema2", resourceCulture);

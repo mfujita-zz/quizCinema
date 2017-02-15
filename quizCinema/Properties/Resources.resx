@@ -121,22 +121,25 @@
   <data name="cinema2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cinema2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cinema6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cinema6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cinema-stallone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cinema-stallone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cinema7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cinema7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cinema4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cinema4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cinema-sandra_bullock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cinema-sandra_bullock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cinema-stallone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cinema-stallone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cinema6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cinema6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cinema3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cinema3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cinema4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cinema4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cinema-stallone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cinema-stallone1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

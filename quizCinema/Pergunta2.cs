@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+using System.Media;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -30,6 +30,7 @@ namespace quizCinema
             rb2.Text = "b) Uma linda mulher";
             rb3.Text = "c) 11 homens e 1 segredo";
             rb4.Text = "d) Resident evil";
+            BackColor = System.Drawing.ColorTranslator.FromHtml("#3D332A");
         }
 
         private void btn02_03_Click(object sender, EventArgs e)
