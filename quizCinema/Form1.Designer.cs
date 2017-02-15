@@ -99,6 +99,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::quizCinema.Properties.Resources.cinema2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 261);
             this.Controls.Add(this.btnComecar);
             this.Controls.Add(this.txtEmail);
@@ -107,6 +109,7 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblSobrenome);
             this.Controls.Add(this.lblNome);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quiz Cinema";

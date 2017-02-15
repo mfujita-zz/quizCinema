@@ -25,7 +25,7 @@ namespace quizCinema
         private void Pergunta1_Load(object sender, EventArgs e)
         {
             lblNomeSobrenome.Text = nomeCompleto;
-            lblPergunta1.Text = "1. Sylvester Stallone interpretou todos os personagens abaixo, exceto: (1 ponto)";
+            lblPergunta1.Text = "Sylvester Stallone interpretou todos os personagens abaixo, exceto: (1 ponto)";
             rb1.Text = "a) Cobra";
             rb2.Text = "b) Rambo";
             rb3.Text = "c) Soldado universal";
@@ -34,7 +34,7 @@ namespace quizCinema
 
         private void btn01_02_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conexao = new SqlConnection("Server=SAMSUNG-SERIE-9\\SQLEXPRESS;Database=quizCinema; Trusted_connection=Yes"))
+            using (SqlConnection conexao = new SqlConnection("Server=AME0556327W10-1\\SQLEXPRESS;Database=quizCinema; Trusted_connection=Yes"))
             {
                 using (SqlCommand cmd = new SqlCommand("insert into tb_Perguntas (pergunta, resposta_correta, nivel, pontos, id_jogador) values (@PERG, @RESP_CORR, @NIVEL, @PONTOS, @ID_JOgador)", conexao))
                 {
@@ -47,6 +47,7 @@ namespace quizCinema
                         cmd.Parameters.AddWithValue("ID_JOgador", id);
                         conexao.Open();
                         cmd.ExecuteNonQuery();
+                        Form1.acertos++;
                     }
                     Close();
                 }

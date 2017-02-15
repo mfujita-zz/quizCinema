@@ -47,7 +47,7 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(15, 50);
+            this.lblNome.Location = new System.Drawing.Point(12, 50);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(35, 13);
             this.lblNome.TabIndex = 1;
@@ -56,7 +56,7 @@
             // lblPontos
             // 
             this.lblPontos.AutoSize = true;
-            this.lblPontos.Location = new System.Drawing.Point(18, 99);
+            this.lblPontos.Location = new System.Drawing.Point(12, 100);
             this.lblPontos.Name = "lblPontos";
             this.lblPontos.Size = new System.Drawing.Size(35, 13);
             this.lblPontos.TabIndex = 2;
@@ -70,6 +70,7 @@
             this.btnJogarDeNovo.TabIndex = 3;
             this.btnJogarDeNovo.Text = "Jogar de novo";
             this.btnJogarDeNovo.UseVisualStyleBackColor = true;
+            this.btnJogarDeNovo.Click += new System.EventHandler(this.btnJogarDeNovo_Click);
             // 
             // btnEncerrar
             // 
@@ -85,6 +86,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::quizCinema.Properties.Resources.cinema4;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(784, 261);
             this.Controls.Add(this.btnEncerrar);
             this.Controls.Add(this.btnJogarDeNovo);

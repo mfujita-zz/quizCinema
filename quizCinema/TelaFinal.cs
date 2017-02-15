@@ -25,16 +25,36 @@ namespace quizCinema
 
         private void TelaFinal_Load(object sender, EventArgs e)
         {
+            if (Form1.acertos == 4)
+            { 
+                lblMensagem.Text = "Parabéns!";
+            }
+            else if (Form1.acertos == 2 || Form1.acertos == 3)
+            { 
+                lblMensagem.Text = "Foi bem!";
+            }
+            else
+                lblMensagem.Text = "Precisa estudar.";
+
             lblNome.Text = nomeCompleto + ", sua pontuação foi";
 
-            using (SqlConnection conexao = new SqlConnection("Server=SAMSUNG-SERIE-9\\SQLEXPRESS; Database=quizCinema; Trusted_connection=Yes"))
+            using (SqlConnection conexao = new SqlConnection("Server=AME0556327W10-1\\SQLEXPRESS; Database=quizCinema; Trusted_connection=Yes"))
             {
                 using (SqlCommand cmd = new SqlCommand("select sum(pontos) from tb_perguntas where id_jogador = @IDJOGADOR", conexao))
                 {
                     cmd.Parameters.AddWithValue("IDJOGADOR", id);
                     conexao.Open();
 
-                    int pontos = (int)cmd.ExecuteScalar();
+                    int pontos = 0;
+
+                    try
+                    { 
+                        pontos = (int)cmd.ExecuteScalar();
+                    }
+                    catch
+                    {
+                        pontos = 0;
+                    }
 
                     lblPontos.Text = pontos + " PONTOS";
                 }
@@ -44,6 +64,12 @@ namespace quizCinema
         private void btnEncerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnJogarDeNovo_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
         }
     }
 }

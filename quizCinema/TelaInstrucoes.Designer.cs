@@ -65,6 +65,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::quizCinema.Properties.Resources.cinema3;
             this.ClientSize = new System.Drawing.Size(784, 261);
             this.Controls.Add(this.btnVamosLa);
             this.Controls.Add(this.lblInstrucoes);

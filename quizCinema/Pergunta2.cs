@@ -25,7 +25,7 @@ namespace quizCinema
         private void Pergunta2_Load(object sender, EventArgs e)
         {
             lblNomeSobrenome.Text = nomeCompleto;
-            lblPergunta2.Text = "2. Sandra Bullock estreou em qual dos filmes abaixo? (2 pontos)";
+            lblPergunta2.Text = "Sandra Bullock estreou em qual dos filmes abaixo? (2 pontos)";
             rb1.Text = "a) Velocidade máxima";
             rb2.Text = "b) Uma linda mulher";
             rb3.Text = "c) 11 homens e 1 segredo";
@@ -34,7 +34,7 @@ namespace quizCinema
 
         private void btn02_03_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conexao = new SqlConnection("Server=SAMSUNG-SERIE-9\\SQLEXPRESS;Database=quizCinema; Trusted_connection=Yes"))
+            using (SqlConnection conexao = new SqlConnection("Server=AME0556327W10-1\\SQLEXPRESS;Database=quizCinema; Trusted_connection=Yes"))
             {
                 using (SqlCommand cmd = new SqlCommand("insert into tb_Perguntas (pergunta, resposta_correta, nivel, pontos, id_jogador) values (@PERG, @RESP_CORR, @NIVEL, @PONTOS, @ID_JOgador)", conexao))
                 {
@@ -47,6 +47,7 @@ namespace quizCinema
                         cmd.Parameters.AddWithValue("ID_JOgador", id);
                         conexao.Open();
                         cmd.ExecuteNonQuery();
+                        Form1.acertos++;
                     }
                     Close();
                 }

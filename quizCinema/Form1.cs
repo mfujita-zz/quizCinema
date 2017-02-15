@@ -13,6 +13,8 @@ namespace quizCinema
 {
     public partial class Form1 : Form
     {
+        public static int acertos = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +22,7 @@ namespace quizCinema
 
         private void btnComecar_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conexao = new SqlConnection("Server=SAMSUNG-SERIE-9\\SQLEXPRESS;Database=quizCinema; Trusted_connection=Yes"))
+            using (SqlConnection conexao = new SqlConnection("Server=AME0556327W10-1\\SQLEXPRESS;Database=quizCinema; Trusted_connection=Yes"))
             {
                 using (SqlCommand cmd = new SqlCommand("insert into tb_jogador(nome, sobrenome, email) OUTPUT INSERTED.ID_jogador values (@NOME, @SOBRENOME, @EMAIL)", conexao))
                 {
